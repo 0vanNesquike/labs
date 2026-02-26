@@ -205,6 +205,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -234,6 +242,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
@@ -255,9 +286,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:12&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasGenre>&quot;Hip-Hop&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasName>&quot;Buisness&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">270206140</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -266,9 +322,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CleaninOutMyCloset">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:58&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Cleanin&apos; Out My Closet&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">520445335</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -277,9 +358,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CurtainsCloseSkit">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;1:01&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Curtains Close (Skit)&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">21918791</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -291,12 +397,31 @@
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;0:29&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasGenre>&quot;Hip-Hop&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasName>&quot;Curtains Up (Skit)&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">442593</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -305,9 +430,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Drips">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:45&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Drips&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53059671</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -316,6 +466,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Eminem">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:performsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness"/>
         <untitled-ontology-4:performsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CleaninOutMyCloset"/>
         <untitled-ontology-4:performsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CurtainsCloseSkit"/>
@@ -347,9 +521,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#HailiesSong">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:20&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hailie&apos;s Song&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">165456629</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -358,9 +557,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#MyDadsGoneCrazy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:27&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;My Dad&apos;s Gone Crazy&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110358076</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -369,6 +593,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#MyFavorites">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:includesTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness"/>
         <untitled-ontology-4:includesTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Superman"/>
         <untitled-ontology-4:includesTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WithoutMe"/>
@@ -381,9 +629,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PaulRosenbergSkit">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;0:22&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Paul Rosenberg (Skit)&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">73064</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -392,9 +665,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SayGoodbyeHollywood">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:32&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Say Goodbye Hollywood&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">737777012</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -403,9 +701,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SayWhatYouSay">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:09&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Say What You Say&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58772529</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -414,9 +737,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SingForTheMoment">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:39&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Sing for the Moment&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">684228212</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -425,9 +773,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Soldier">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;3:46&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Soldier&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">148240177</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -436,9 +809,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SquareDance">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:23&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Square Dance&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">97241641</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -447,9 +845,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SteveBermanSkit">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;0:33&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Steve Berman (Skit)&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23484635</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -458,9 +881,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Superman">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasGenre>&quot;5:50&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasGenre>&quot;Hip-Hop&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasName>&quot;Superman&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1323661179</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -469,6 +917,30 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TheEminemShow">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness"/>
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CleaninOutMyCloset"/>
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CurtainsCloseSkit"/>
@@ -489,6 +961,7 @@
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhenTheMusicStops"/>
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhiteAmerica"/>
         <untitled-ontology-4:containsTrack rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WithoutMe"/>
+        <untitled-ontology-4:isReleasedBy rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Eminem"/>
         <untitled-ontology-4:hasName>&quot;The Eminem Show&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasReleaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2002</untitled-ontology-4:hasReleaseYear>
     </owl:NamedIndividual>
@@ -499,9 +972,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TheKissSkit">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;1:15&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;The Kiss (Skit)&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">289108881</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -510,9 +1008,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TillICollapse">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:57&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;&apos;Till I Collapse&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2434913370</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -521,9 +1044,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhenTheMusicStops">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:29&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;When the Music Stops&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">99181447</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -532,9 +1080,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhiteAmerica">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:24&quot;</untitled-ontology-4:hasDuration>
         <untitled-ontology-4:hasName>&quot;Hip-Hop&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasName>&quot;White America&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200157237</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
     
 
@@ -543,9 +1116,34 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WithoutMe">
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Album"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Artist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Playlist"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasGenre>&quot;4:50&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasGenre>&quot;Hip-Hop&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasName>&quot;Without Me&quot;</untitled-ontology-4:hasName>
+        <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2979792090</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
 </rdf:RDF>
 
