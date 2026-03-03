@@ -281,6 +281,21 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -305,6 +320,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Buisness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -328,6 +344,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:12&quot;</untitled-ontology-4:hasDuration>
@@ -341,6 +372,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CleaninOutMyCloset -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#CleaninOutMyCloset">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -364,6 +396,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:58&quot;</untitled-ontology-4:hasDuration>
@@ -540,6 +587,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#HailiesSong -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#HailiesSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -563,6 +611,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:20&quot;</untitled-ontology-4:hasDuration>
@@ -576,6 +639,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#MyDadsGoneCrazy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#MyDadsGoneCrazy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -599,6 +663,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:27&quot;</untitled-ontology-4:hasDuration>
@@ -684,6 +763,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SayGoodbyeHollywood -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SayGoodbyeHollywood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -707,6 +787,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:32&quot;</untitled-ontology-4:hasDuration>
@@ -756,6 +851,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SingForTheMoment -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#SingForTheMoment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -779,6 +875,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:39&quot;</untitled-ontology-4:hasDuration>
@@ -792,6 +903,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Soldier -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Soldier">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -815,6 +927,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;3:46&quot;</untitled-ontology-4:hasDuration>
@@ -900,6 +1027,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Superman -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Superman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -923,6 +1051,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasGenre>&quot;5:50&quot;</untitled-ontology-4:hasGenre>
@@ -991,6 +1134,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TheKissSkit -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TheKissSkit">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -1014,6 +1158,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;1:15&quot;</untitled-ontology-4:hasDuration>
@@ -1027,6 +1186,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TillICollapse -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#TillICollapse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -1050,6 +1210,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;4:57&quot;</untitled-ontology-4:hasDuration>
@@ -1099,6 +1274,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhiteAmerica -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WhiteAmerica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -1122,6 +1298,21 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-4:hasDuration>&quot;5:24&quot;</untitled-ontology-4:hasDuration>
@@ -1135,6 +1326,7 @@
     <!-- http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WithoutMe -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#WithoutMe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
         <rdf:type>
             <owl:Restriction>
@@ -1160,11 +1352,65 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
             </owl:Restriction>
         </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-4:hasGenre>&quot;4:50&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasGenre>&quot;Hip-Hop&quot;</untitled-ontology-4:hasGenre>
         <untitled-ontology-4:hasName>&quot;Without Me&quot;</untitled-ontology-4:hasName>
         <untitled-ontology-4:hasSpotifyPlays rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2979792090</untitled-ontology-4:hasSpotifyPlays>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#PopularTrack"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#hasSpotifyPlays"/>
+        <owl:someValuesFrom>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000000</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:someValuesFrom>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ovann/ontologies/2026/1/untitled-ontology-4#Track"/>
+    </owl:Restriction>
     
 
 
